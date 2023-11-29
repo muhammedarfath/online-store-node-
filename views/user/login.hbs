@@ -1,0 +1,30 @@
+<section class="bannerlogin">
+    <div class="form-container">
+        <h1>Login form</h1>
+        <form action="/login" method="post">
+            {{#if loginErr}}
+            <p class="err">{{loginErr}}</p>
+            {{/if}}
+            <div class="control">
+                <label for="">Name</label>
+                <input type="text" name="Name" placeholder="enter your name">
+            </div>
+            <div class="control">
+                <label for="">Password</label>
+                <input type="password" name="Password" placeholder="enter your password">
+            </div>
+            <span><input type="checkbox">Remember me.</span>
+            <div class="control">
+                <input type="Submit" value="Login">
+            </div>
+        </form>
+        <div class="link">
+            <a href="">Forgot password ?</a>
+        </div>
+        <div class="sign-up">
+            <p>Not a member?<a href="/signup">Signup now</a></p>
+        </div>
+
+
+    </div>
+</section>

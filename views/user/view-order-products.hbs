@@ -1,0 +1,30 @@
+
+<section>
+  <div class="container">
+
+    <table class="table mt-5">
+      <thead>
+        <tr>
+          
+         
+          <th>Product Name</th>
+          <th scope="col">Product quantity</th>
+          <th scope="col">Price</th>
+         
+
+        </tr>
+      </thead>
+      <tbody>
+        {{#each products}}
+        <tr>
+          <th>{{this.product.Category}}</th>
+          <th>{{this.quantity}}</th>
+          <td>{{this.product.Price}}</td>
+          
+          
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

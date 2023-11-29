@@ -1,0 +1,150 @@
+<section class="banner_main">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8">
+            <div class="text-bg">
+               <h1> <span class="blodark"> ONLINE STORE </span> <br>MANAGEMENT SYSTEM 2023</h1>
+               <p> A new system of JDT </p>
+               <a class="read_more" href="/shop-now">Shop now</a>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</section>
+<!-- end banner -->
+
+{{#if user}}
+<div id="project" class="project">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="titlepage">
+               <h2>Featured Products</h2>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+
+         <div class="product_main">
+            {{#each products}}
+            <div class="card m-2" style="width: 18rem;">
+               <img class="card-img-top" src="/product-images/{{this._id}}.jpg" alt="Card image cap"
+                  style="width:10rem;height:10rem;">
+               <div class="card-body">
+                  <h5 class="card-title">{{this.Category}}</h5>
+                  <p class="cart-text">Rs.{{this.Price}}</p>
+
+                  <button onclick="addToCart('{{this._id}}')" class="btn btn-primary">Add to cart</button>
+
+               </div>
+            </div>
+
+            {{/each}}
+
+            <div class="col-md-12">
+               <a class="read_more" href="/all-products">See More</a>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
+<!-- end project section -->
+
+<!-- three_box section -->
+<div class="three_box">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4">
+            <div class="gift_box">
+               <i><img src="images/icon_mony.png"></i>
+               <span>Money Back</span>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="gift_box">
+               <i><img src="images/icon_gift.png"></i>
+               <span>Special Gift</span>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="gift_box">
+               <i><img src="images/icon_car.png"></i>
+               <span>Free Shipping</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{{/if}}
+<!-- end three_box section -->
+
+<!--  footer -->
+<footer>
+   <div class="footer bg-dark">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3">
+               <div class="inror_box">
+                  <h3>Courses </h3>
+                  <div class="d-flex flex-column justify-content-start">
+                     <a class="text-white mb-2" href="#">Computer Hardware Engineering</a>
+                     <a class="text-white mb-2" href="#">Computer Engineering</a>
+                     <a class="text-white mb-2" href="#">civil Engineering</a>
+                     <a class="text-white mb-2" href="#">Automobile Engineering</a>
+                     <a class="text-white mb-2" href="#">Architecture Engineering</a>
+                     <a class="text-white mb-2" href="#">Electronics Engineering</a>
+                     <a class="text-white mb-2" href="#">Electrical & Electronics Engineering</a>
+                     <a class="text-white mb-2" href="#">Mechanical Engineering</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="inror_box">
+                  <h3>Facilities</h3>
+                  <div class="d-flex flex-column justify-content-start">
+                     <a class="text-white mb-2" href="#">Library</a>
+                     <a class="text-white mb-2" href="#">Sports</a>
+                     <a class="text-white mb-2" href="#">Cafeteria</a>
+                     <a class="text-white mb-2" href="#">IT infrastructure</a>
+                     <a class="text-white mb-2" href="#">Laboratories</a>
+
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-3">
+               <div class="inror_box">
+                  <h3>Useful Links </h3>
+                  <div class="d-flex flex-column justify-content-start">
+                     <a class="text-white mb-2" href="#">Admission</a>
+                     <a class="text-white mb-2" href="#"> Download</a>
+                     <a class="text-white mb-2" href="#">Grievance</a>
+                     <a class="text-white mb-2" href="#">Alumni</a>
+                     <a class="text-white mb-2" href="#">Notice Board</a>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <p>© JDT Islam Polytechnic College. All Right Reserved.
+                     Powered by<a href="https://Corehub.in"> Corehub Solutions</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- end footer -->
+
+</body>
+
+<script>
+
+</script>

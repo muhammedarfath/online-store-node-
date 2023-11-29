@@ -1,0 +1,116 @@
+  <!-- header inner -->
+         
+            <div class="header_top  " >
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-4 col-4">
+                        <ul class="conta_icon ">
+                           <li><a href="#"> Call:04952730808</a> </li>
+                           <span class="time_o"> Open hour: 9.00 - 4.00</span>
+                        </ul>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <ul class="social_icon">
+                           <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                           </li>
+                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                          
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <div class="se_fonr1">
+                           <form action="#" >
+                              <div class="select-box">
+                                 <label for="select-box1" class="label select-box1"><span class="label-desc">English</span> </label>
+                                 <select id="select-box1" class="select">
+                                    <option value="Choice 1">English</option>
+                                    <option value="Choice 1">Malayalam</option>
+                                    <option value="Choice 2">Hindi</option>
+                                 </select>
+                              </div>
+                           </form>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <section class="header_midil sticky-top">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class="col-md-4 ">
+                        <ul class="conta_icon d_none1">
+                           <li><a href="#"><img src="images/mail-fill.png" alt="#"/> jdtpoly@gmail.com</a> </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-4 col-8">
+                        <a class="logo" href="#"><img src="images/college-logo.png" alt="#"/></a>
+                     </div>
+                     <div class="col-md-4 col-4">
+                        <ul class="right_icon ">
+                         
+                           <li><a href="/cart"><img src="images/shopping-cart-fill.png"/> </li>
+                           <a href="/cart" class="order">Order Now<span class="badge badge-warning" id="cart-count">{{cartCount}}</span></a> 
+                          
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            
+            <div class="header_bottom">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 col-xl-8 col-lg-8 col-7">
+                               <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item ">
+                                    <a class="nav-link" href="/view-products">Home</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="/about">About</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="/all-products">Products</a>
+                                 </li>
+                           
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="/news">News</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    {{#if user}}
+                                       <a class="nav-link" href="/logout">Logout</a>
+                                       {{else}}
+                                          <a class="nav-link" href="/login">Login</a>
+                                    {{/if}}
+                                    
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                     <div class="col-md-4 col-xl-4 col-lg-4 col-5">
+                       
+                        <div class="search">
+                           <form action="/action_page.php">
+                              <input class="form_sea" type="text" placeholder="Search" name="search">
+                              <button type="submit" class="seach_icon"><i class="fa fa-search"></i></button>
+                           </form>
+                        </div>
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      
+      
+      <!-- end header inner -->
+      <!-- end header -->
